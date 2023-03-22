@@ -18,7 +18,7 @@ public class PenjualanKostum {
         System.out.println("Daftar Kostum Cosplay:");
         for (KostumCosplay kostum : daftarKostum) {
             System.out.println("ID: " + kostum.getId());
-            System.out.println("Nama Kostum: " + kostum.getNamaKostum());
+            System.out.println("Nama Kostum: " + kostum.getNama());
             System.out.println("Harga: " + kostum.getHarga());
         }
         System.out.println();
@@ -40,7 +40,7 @@ public class PenjualanKostum {
             if (daftarKostum.get(i).getId() == id) {
                 System.out.println("Data Kostum:");
                 System.out.println("ID: " + daftarKostum.get(i).getId());
-                System.out.println("Nama Kostum: " + daftarKostum.get(i).getNamaKostum());
+                System.out.println("Nama Kostum: " + daftarKostum.get(i).getNama());
                 System.out.println("Harga: " + daftarKostum.get(i).getHarga());
 
                 System.out.println("Masukkan data baru:");
@@ -50,7 +50,7 @@ public class PenjualanKostum {
                 int hargaBaru = input.nextInt();
 
                 // set data baru ke objek KostumCosplay yang bersangkutan
-                daftarKostum.get(i).setNamaKostum(namaKostumBaru);
+                daftarKostum.get(i).setNama(namaKostumBaru);
                 daftarKostum.get(i).setHarga(hargaBaru);
 
                 System.out.println("Data Kostum dengan ID " + id + " telah diupdate.");
