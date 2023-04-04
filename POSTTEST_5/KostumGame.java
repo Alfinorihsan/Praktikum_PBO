@@ -3,7 +3,6 @@ public class KostumGame extends KostumCosplay {
         super(id, namaKostum, harga, "Game");
     }
 
-    // Implementasi method toString()
     @Override
     public String toString() {
         return super.toString() + " [kategori=Game]";
