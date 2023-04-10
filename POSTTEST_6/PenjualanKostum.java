@@ -37,6 +37,7 @@ public final void tampilkanKostum() {
         System.out.println("Nama Kostum: " + kostum.getNama());
         System.out.println("Kategori Kostum: " + kostum.getKategori());
         System.out.println("Harga: " + kostum.getHarga());
+        System.out.println();
     }
     System.out.println("Jumlah Kostum: " + jumlahKostum); // menampilkan jumlahKostum
     System.out.println();
